@@ -7,9 +7,12 @@ const Footer = () => {
     <footer>
       <p>© 2020 Aube</p>
       <div className={footerPages}>
-        <a className={link} onClick={() => scroll.scrollToTop()}>
-          Home
-        </a>
+        <input
+          type="button"
+          value="Home"
+          className={link}
+          onClick={() => scroll.scrollToTop()}
+        />
         <Link
           activeClass="active"
           className={link}

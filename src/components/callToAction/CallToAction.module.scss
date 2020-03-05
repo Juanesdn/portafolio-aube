@@ -3,9 +3,13 @@
   padding: 20em 5% 20em 5%;
 
   h1,
-  a {
+  input {
     display: inline-block;
     margin: 2% 60px;
     vertical-align: middle;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

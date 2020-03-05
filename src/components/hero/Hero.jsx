@@ -1,5 +1,6 @@
 import React from "react";
 import { image } from "./Hero.module.scss";
+import { Link } from "react-scroll";
 import PeopleIcon from "../../images/people.svg";
 
 const Hero = () => {
@@ -12,9 +13,16 @@ const Hero = () => {
           way companies leave a mark regardless the market or public that they
           want to reach.
         </h4>
-        <a href="#" className="btn__outline">
+
+        <Link
+          activeClass="active"
+          className="btn__outline"
+          to="contact-us"
+          spy={true}
+          smooth={true}
+        >
           Get Started
-        </a>
+        </Link>
       </div>
       <div className="column">
         <img className={image} src={PeopleIcon} alt="people" />

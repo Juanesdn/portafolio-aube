@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .text_container {
+    width: 100%;
+  }
+}
