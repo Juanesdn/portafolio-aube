@@ -1,0 +1,27 @@
+$primary: #e94e1b;
+
+footer {
+  padding: 0 5%;
+  margin-bottom: 40px;
+  color: $primary;
+
+  p,
+  .footerPages {
+    display: inline-block;
+  }
+
+  .footerPages {
+    float: right;
+
+    a {
+      text-decoration: none;
+      font-weight: 100;
+      color: $primary;
+      margin-left: 30px;
+    }
+
+    .link:hover {
+      cursor: pointer;
+    }
+  }
+}

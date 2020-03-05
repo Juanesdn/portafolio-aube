@@ -1,0 +1,27 @@
+@import "../app/App.scss";
+
+.about {
+  padding: 0 5%;
+  background-image: url("../../images/bg-left.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  height: 900px;
+  min-height: 900px;
+
+  h2 {
+    text-align: right;
+    margin-left: 50%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-top: 300px;
+  }
+
+  h3 {
+    margin-left: 50%;
+    margin-bottom: 30px;
+    padding-bottom: 300px;
+    font-size: 32px;
+    font-weight: 100;
+  }
+}

@@ -1,0 +1,75 @@
+$primary: #e94e1b;
+
+.portfolio {
+  text-align: center;
+  margin: 10em 0 3em 0;
+  padding: 0 5%;
+
+  h2 {
+    width: 50%;
+    margin: 0 auto 30px auto;
+  }
+
+  .websites {
+    display: flex;
+    justify-content: center;
+
+    .container {
+      position: relative;
+      margin: 75px 30px;
+      border-radius: 15px;
+      width: 320px;
+      height: 190px;
+
+      .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .inner {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: $primary;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+          font-size: 150%;
+        }
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          border: 2px solid white;
+          border-radius: 6px;
+          width: 120px;
+          height: 45px;
+          line-height: 50px;
+          text-align: center;
+          margin-top: 30px;
+          transition: color 0.5s, background-color 0.5s;
+
+          &:hover {
+            color: $primary;
+            background-color: white;
+          }
+        }
+      }
+
+      &:hover .inner {
+        opacity: 1;
+      }
+    }
+  }
+}
