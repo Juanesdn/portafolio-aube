@@ -1,7 +1,5 @@
 import React from "react";
-import { image } from "./Hero.module.scss";
 import { Link } from "react-scroll";
-import PeopleIcon from "../../images/people.svg";
 
 const Hero = () => {
   return (
@@ -23,9 +21,6 @@ const Hero = () => {
         >
           Get Started
         </Link>
-      </div>
-      <div className="column">
-        <img className={image} src={PeopleIcon} alt="people" />
       </div>
     </div>
   );

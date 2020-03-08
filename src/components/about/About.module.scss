@@ -21,9 +21,45 @@
     font-weight: 100;
   }
 
-  img {
-    display: block;
-    margin: 25% 0;
-    margin-right: 2em;
+  h2,
+  h3 {
+    margin-left: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+    background-image: url("../../images/mobile-bg-left.svg");
+    background-size: contain;
+    height: 900px;
+    min-height: 900px;
+    overflow-y: visible;
+
+    h2 {
+      padding-top: 900px;
+    }
+
+    h2,
+    h3 {
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    height: 900px;
+    min-height: 900px;
+    background-position: top center;
+
+    h2 {
+      padding-top: 500px;
+    }
+
+    h3 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      font-size: 28px;
+    }
   }
 }

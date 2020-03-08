@@ -13,3 +13,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .callToAction {
+    margin-top: 25em;
+    padding: 8em 5% 15em 5%;
+    background-size: 70%;
+
+    h1,
+    input {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .callToAction {
+    margin-top: 5em;
+  }
+}
