@@ -1,50 +1,60 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { link } from "./Navbar.module.scss";
+import {
+  navbar,
+  navbar__navigation,
+  navbar__logo,
+  navbar__navigationItems,
+  spacer,
+  navbar__toggle
+} from "./Navbar.module.scss";
+import { TogglerButton } from "./components";
 import Logo from "../../images/logo.svg";
 
-const Navbar = () => {
+const Navbar = ({ drawerClickHandler }) => {
   return (
-    <nav>
-      <a href="#home">
-        <img src={Logo} alt="logo" />
-      </a>
-      <ul>
-        <li>
-          <Link
-            activeClass="active"
-            className={link}
-            to="portfolio"
-            spy={true}
-            smooth={true}
-          >
-            Portfolio
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
-            className={link}
-            to="about"
-            spy={true}
-            smooth={true}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
-            className={link}
-            to="contact-us"
-            spy={true}
-            smooth={true}
-          >
-            Contact Us
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <header className={navbar}>
+      <nav className={navbar__navigation}>
+        <div className={navbar__toggle}>
+          <TogglerButton click={drawerClickHandler} />
+        </div>
+        <div className={navbar__logo}>
+          <a href="/">
+            <img src={Logo} alt="logo" />
+          </a>
+        </div>
+        <div className={spacer} />
+        <div className={navbar__navigationItems}>
+          <ul>
+            <li>
+              <Link
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link activeClass="active" to="about" spy={true} smooth={true}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="contact-us"
+                spy={true}
+                smooth={true}
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   );
 };
 
